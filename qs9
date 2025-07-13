@@ -1,0 +1,19 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        final int amount=100;
+        Scanner sc=new Scanner(System.in);
+        int paper=sc.nextInt();
+        int cost=sc.nextInt();
+        int print=sc.nextInt();
+        int selled=paper*cost;
+        int spent=paper*print;
+        int remaining=selled-spent;
+        int profit=remaining-amount;
+        System.out.print(profit);
+    }
+}
